@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conecta Palmares</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            <span>CP</span>
+            <div>
+                <h1>Conecta Palmares</h1>
+                <p>Comércio local conectado</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#comercios">Comércios</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-texto">
+
+                <span class="tag"> Comércio de Palmares</span>
+
+                <h2>
+                    Encontre o que você
+                    <span>precisa perto de você.</span>
+                </h2>
+
+                <p>
+                    Descubra lojas, serviços e estabelecimentos
+                    comerciais de Palmares em um só lugar.
+                </p>
+
+                <a href="#comercios" class="botao">
+                    Explorar comércios
+                </a>
+
+            </div>
+
+            <div class="hero-card">
+                <div class="icone-loja">🏪</div>
+                <h3>Comércio local</h3>
+                <p>Valorize os estabelecimentos da nossa cidade.</p></div>
+
+        </section>
+
+        <section id="comercios" class="comercios">
+
+            <div class="titulo-secao">
+                <div>
+                    <span class="subtitulo">ENCONTRE SEU COMÉRCIO</span>
+
+                    <h2>Comércios de Palmares</h2>
+                    <p> Pesquise por nome ou escolha uma categoria.</p>
+                </div>
+
+            </div>
+
+            <div class="filtros">
+
+                <input
+                    type="text"
+                    id="campoBusca"
+                    placeholder="  Buscar estabelecimento..."
+                >
+
+                <select id="filtroCategoria">
+
+                    <option value="todos">
+                        Todas as categorias
+                    </option>
+
+                    <option value="alimentacao">
+                        Alimentação
+                    </option>
+
+                    <option value="moda">
+                        Moda
+                    </option>
+
+                    <option value="beleza">
+                        Beleza
+                    </option>
+
+                    <option value="servicos">
+                        Serviços
+                    </option>
+
+                    <option value="eletronicos">
+                        Eletrônicos
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div id="listaComercios" class="lista-comercios">
+
+                <article
+                    class="card-comercio"
+                    data-nome="Sabor da Terra"
+                    data-categoria="alimentacao"
+                >
+                    <div class="card-topo">
+                        <div class="icone">🍔</div>
+                        <span class="categoria">Alimentação</span>
+                    </div>
+
+                    <h3>Sabor da Terra</h3>
+
+                    <p>
+                        Restaurante com opções de comida
+                        caseira e regional.
+                    </p>
+
+                    <div class="informacao">
+                        📍 Centro, Palmares - PE
+                    </div>
+
+                    <div class="informacao">
+                        📞 (81) 99999-0001
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="card-comercio"
+                    data-nome="Moda Palmares"
+                    data-categoria="moda"
+                >
+
+                    <div class="card-topo">
+                        <div class="icone">👗</div>
+                        <span class="categoria">Moda</span>
+                    </div>
+
+                    <h3>Moda Palmares</h3>
+
+                    <p>
+                        Roupas e acessórios para diferentes
+                        estilos e ocasiões.
+                    </p>
+
+                    <div class="informacao">
+                        📍 Centro, Palmares - PE
+                    </div>
+
+                    <div class="informacao">
+                        📞 (81) 99999-0002
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="card-comercio"
+                    data-nome="Studio Bella"
+                    data-categoria="beleza"
+                >
+
+                    <div class="card-topo">
+                        <div class="icone">💇‍♀️</div>
+                        <span class="categoria">Beleza</span>
+                    </div>
+
+                    <h3>Studio Bella</h3>
+
+                    <p>
+                        Serviços de beleza, cabelo e cuidados
+                        pessoais.
+                    </p>
+
+                    <div class="informacao">
+                        📍 São Sebastião, Palmares - PE
+                    </div>
+
+                    <div class="informacao">
+                        📞 (81) 99999-0003
+                    </div>
+
+                </article>
+
+                <article
+                    class="card-comercio"
+                    data-nome="Tech Palmares"
+                    data-categoria="eletronicos"
+                >
+
+                    <div class="card-topo">
+                        <div class="icone">💻</div>
+                        <span class="categoria">Eletrônicos</span>
+                    </div>
+
+                    <h3>Tech Palmares</h3>
+
+                    <p>
+                        Produtos eletrônicos, acessórios
+                        e assistência técnica.
+                    </p>
+
+                    <div class="informacao">Centro, Palmares - PE</div>
+
+                    <div class="informacao"> (81) 99999-0004</div>
+
+                </article>
+
+
+                <article
+                    class="card-comercio"
+                    data-nome="Palmares Serviços"
+                    data-categoria="servicos"
+                >
+
+                    <div class="card-topo">
+                        <div class="icone">🔧</div>
+                        <span class="categoria">Serviços</span></div>
+
+                    <h3>Palmares Serviços</h3>
+
+                    <p>
+                        Serviços gerais para facilitar o
+                        dia a dia da população.</p>
+
+                    <div class="informacao">
+                         Centro, Palmares - PE</div>
+
+                    <div class="informacao">
+                         (81) 99999-0005</div>
+
+                </article>
+
+
+                <article
+                    class="card-comercio"
+                    data-nome="Doce Sabor"
+                    data-categoria="alimentacao"
+                >
+
+                    <div class="card-topo">
+                        <div class="icone">🍰</div>
+                        <span class="categoria">Alimentação</span>
+                    </div>
+
+                    <h3>Doce Sabor</h3>
+
+                    <p>
+                        Doces, bolos e sobremesas para
+                        diferentes ocasiões.
+                    </p>
+
+                    <div class="informacao">
+                        📍 Centro, Palmares - PE
+                    </div>
+
+                    <div class="informacao">
+                        📞 (81) 99999-0006
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <p id="mensagemVazia" class="mensagem-vazia">
+                Nenhum estabelecimento encontrado.
+            </p>
+
+        </section>
+
+
+        <!-- SOBRE -->
+
+        <section id="sobre" class="sobre">
+
+            <div>
+
+                <span class="subtitulo">
+                    SOBRE O PROJETO
+                </span>
+
+                <h2>
+                    Conectando pessoas
+                    ao comércio local.
+                </h2>
+
+                <p>
+                    O Conecta Palmares é um projeto acadêmico
+                    desenvolvido para facilitar a divulgação
+                    e localização de estabelecimentos comerciais
+                    de Palmares.
+                </p>
+
+            </div>
+
+            <div class="sobre-box">
+
+                <div>
+                    <strong>🏪</strong>
+                    <span>Comércios</span>
+                </div>
+
+                <div>
+                    <strong>🔎</strong>
+                    <span>Busca</span>
+                </div>
+
+                <div>
+                    <strong>📍</strong>
+                    <span>Localização</span>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>
+            © 2026 Conecta Palmares</p>
+
+        <p>
+            Projeto acadêmico</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
