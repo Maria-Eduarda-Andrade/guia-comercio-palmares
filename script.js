@@ -69,6 +69,19 @@ function filtrarComercios() {
     });
 
 
+    // Mostra a quantidade de resultados encontrados
+let contadorResultados = document.getElementById("contador-resultados");
+
+if (!contadorResultados) {
+    contadorResultados = document.createElement("p");
+    contadorResultados.id = "contador-resultados";
+    mensagemVazia.parentNode.insertBefore(contadorResultados, mensagemVazia);
+}
+
+contadorResultados.textContent =
+    quantidadeResultados === 1
+        ? "1 estabelecimento encontrado"
+        : `${quantidadeResultados} estabelecimentos encontrados`;
     // Se nenhum estabelecimento for encontrado
 
     if (quantidadeResultados === 0) {
